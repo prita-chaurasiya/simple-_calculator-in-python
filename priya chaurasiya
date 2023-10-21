@@ -1,0 +1,38 @@
+contact = {}
+   
+
+def display_contact():
+    print("name\t\tcontact number")
+    for key in contact:
+        print("{}\t\t{}".format(key,contact.get(key)))
+while True:
+    choice = int(input("1.Add new contact\n 2.search contact\n 3.display contact\n 4. edit contact\n 5.delete contact\n 6.exit\n enter your choice "))
+    if choice == 1:
+        name = input("enter the contact name ")
+        phone = input("enter the mobile number ")
+        contact[name] = phone
+    elif choice == 2:
+        search_name = input("enter the contact name ")
+        if search_name in contact:
+            print(search_name,"'s contact number is",contact[search_name])
+        else:
+           contact = {}
+
+   
+
+def display_contact():
+    print("name\t\tcontact number")
+    for key in contact:
+        print("{}\t\t{}".format(key,contact.get(key)))
+while True:
+    choice = int(input("1.Add new contact\n 2.search contact\n 3.display contact\n 4. edit contact\n 5.delete contact\n 6.exit\n enter your choice "))
+    if choice == 1:
+        name = input("enter the contact name ")
+        phone = input("enter the mobile number ")
+        contact[name] = phone
+    elif choice == 2:
+        search_name = input("enter the contact name ")
+        if search_name in contact:
+            print(search_name,"'s contact number is",contact[search_name])
+        else:
+            break
